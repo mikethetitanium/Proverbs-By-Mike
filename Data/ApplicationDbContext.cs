@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
+using Proverbs_By_Mike.Models;
 
 namespace Proverbs_By_Mike.Data
 {
@@ -9,5 +10,6 @@ namespace Proverbs_By_Mike.Data
             : base(options)
         {
         }
+        public DbSet<Proverbs_By_Mike.Models.proverb> proverb { get; set; } = default!;
     }
 }
