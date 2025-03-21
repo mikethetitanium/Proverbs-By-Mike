@@ -25,6 +25,13 @@ namespace Proverbs_By_Mike.Controllers
             return View(await _context.proverb.ToListAsync());
         }
 
+        // GET: proverbs/ShowSearchForm
+        public async Task<IActionResult> ShowSearchForm()
+        {
+            return View();
+        }
+
+
         // GET: proverbs/Details/5
         public async Task<IActionResult> Details(int? id)
         {
